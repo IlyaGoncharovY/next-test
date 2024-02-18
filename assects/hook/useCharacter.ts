@@ -17,7 +17,7 @@ export const useCharacter = (): Nullable<CharacterType> => {
     useEffect(() => {
         axios.get(`${process.env.NEXT_PUBLIC_RICK_AND_MORTY_API_URL}/character/${router.query.id}`)
             .then(res => setCharacter(res.data))
-    }, []);
+    }, [router.query.id]);
 
     return character
 

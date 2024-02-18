@@ -18,7 +18,7 @@ function Character() {
                 />}
         </>
     );
-};
+}
 
 Character.getLayout = getLayout;
 export default Character;
